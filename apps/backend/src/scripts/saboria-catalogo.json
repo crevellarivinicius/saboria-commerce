@@ -1,0 +1,311 @@
+{
+  "categorias": [
+    {
+      "name": "Bolos & Tortas",
+      "handle": "bolos-tortas"
+    },
+    {
+      "name": "Brigadeiros Finos",
+      "handle": "brigadeiros"
+    },
+    {
+      "name": "Macarons",
+      "handle": "macarons"
+    },
+    {
+      "name": "Cookies & Brownies",
+      "handle": "cookies-brownies"
+    },
+    {
+      "name": "Cheesecakes",
+      "handle": "cheesecakes"
+    },
+    {
+      "name": "Kits & Presentes",
+      "handle": "kits-presentes"
+    }
+  ],
+  "produtos": [
+    {
+      "sku": "300101",
+      "handle": "bolo-chocolate-belga",
+      "title": "Bolo de Chocolate Belga",
+      "description": "Massa fofa de cacau, recheio cremoso e cobertura de ganache feita com chocolate belga 54%. O clássico da casa, para 10 fatias generosas.",
+      "categoria": "Bolos & Tortas",
+      "categoria_handle": "bolos-tortas",
+      "weight": 1200,
+      "validade_dias": 5,
+      "preco_de": 98.9,
+      "preco_por": 89.9,
+      "custo": 34.5,
+      "ean13": "7890000301017",
+      "image": "/saboria/products/300101.jpg",
+      "nutricional": {
+        "ingredientes": "Farinha de trigo, chocolate belga 54%, ovos, manteiga, açúcar, creme de leite fresco, cacau em pó, fermento químico.",
+        "alergicos": "CONTÉM GLÚTEN, LEITE, OVOS E DERIVADOS DE SOJA. PODE CONTER CASTANHAS E AMENDOIM.",
+        "gluten": "contém glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300102",
+      "handle": "torta-limao-siciliano",
+      "title": "Torta de Limão Siciliano",
+      "description": "Base amanteigada, creme de limão siciliano fresco e merengue maçaricado na hora. Equilíbrio exato entre doce e cítrico.",
+      "categoria": "Bolos & Tortas",
+      "categoria_handle": "bolos-tortas",
+      "weight": 900,
+      "validade_dias": 4,
+      "preco_de": 84.9,
+      "preco_por": 76.9,
+      "custo": 29.8,
+      "ean13": "7890000301024",
+      "image": "/saboria/products/300102.jpg",
+      "nutricional": {
+        "ingredientes": "Farinha de trigo, manteiga, ovos, leite condensado, suco e raspas de limão siciliano, açúcar.",
+        "alergicos": "CONTÉM GLÚTEN, LEITE E OVOS. PODE CONTER CASTANHAS.",
+        "gluten": "contém glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300201",
+      "handle": "caixa-brigadeiro-belga-12",
+      "title": "Caixa Brigadeiro Belga — 12 un",
+      "description": "Brigadeiros enrolados à mão com chocolate belga e granulado de cacau 70%. A caixa que resolve qualquer presente.",
+      "categoria": "Brigadeiros Finos",
+      "categoria_handle": "brigadeiros",
+      "weight": 360,
+      "validade_dias": 7,
+      "preco_de": 54.9,
+      "preco_por": 46.9,
+      "custo": 18.2,
+      "ean13": "7890000302014",
+      "image": "/saboria/products/300201.jpg",
+      "nutricional": {
+        "ingredientes": "Leite condensado, chocolate belga 54%, creme de leite, manteiga, granulado de cacau 70%.",
+        "alergicos": "CONTÉM LEITE E DERIVADOS DE SOJA. PODE CONTER CASTANHAS E AMENDOIM. NÃO CONTÉM GLÚTEN.",
+        "gluten": "sem glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300202",
+      "handle": "brigadeiros-pistache-6",
+      "title": "Brigadeiros de Pistache — 6 un",
+      "description": "Brigadeiro de pistache com recheio cremoso e crosta de pistache torrado. Para quem gosta de doce com personalidade.",
+      "categoria": "Brigadeiros Finos",
+      "categoria_handle": "brigadeiros",
+      "weight": 180,
+      "validade_dias": 7,
+      "preco_de": 39.9,
+      "preco_por": 34.9,
+      "custo": 14.6,
+      "ean13": "7890000302021",
+      "image": "/saboria/products/300202.jpg",
+      "nutricional": {
+        "ingredientes": "Leite condensado, pasta de pistache, creme de leite, manteiga, pistache torrado, chocolate branco.",
+        "alergicos": "CONTÉM LEITE, PISTACHE E DERIVADOS DE SOJA. PODE CONTER OUTRAS CASTANHAS E AMENDOIM. NÃO CONTÉM GLÚTEN.",
+        "gluten": "sem glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300301",
+      "handle": "macarons-sortidos-8",
+      "title": "Macarons Sortidos — 8 un",
+      "description": "Seleção da vitrine: framboesa, pistache, chocolate, baunilha e limão. Casquinha crocante, recheio cremoso, coloridos naturalmente.",
+      "categoria": "Macarons",
+      "categoria_handle": "macarons",
+      "weight": 160,
+      "validade_dias": 7,
+      "preco_de": 46.9,
+      "preco_por": 39.9,
+      "custo": 15.8,
+      "ean13": "7890000303011",
+      "image": "/saboria/products/300301.jpg",
+      "nutricional": {
+        "ingredientes": "Farinha de amêndoas, açúcar, claras de ovo, manteiga, chocolate branco, polpas de fruta, corantes naturais.",
+        "alergicos": "CONTÉM AMÊNDOAS, OVOS E LEITE. PODE CONTER OUTRAS CASTANHAS. NÃO CONTÉM GLÚTEN.",
+        "gluten": "sem glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300302",
+      "handle": "macarons-framboesa-6",
+      "title": "Macarons de Framboesa — 6 un",
+      "description": "O nosso best-seller: casquinha rosa, recheio de ganache branca com framboesa fresca. Doce, ácido e impossível de esquecer.",
+      "categoria": "Macarons",
+      "categoria_handle": "macarons",
+      "weight": 120,
+      "validade_dias": 7,
+      "preco_de": 39.9,
+      "preco_por": 33.9,
+      "custo": 13.4,
+      "ean13": "7890000303028",
+      "image": "/saboria/products/300302.jpg",
+      "nutricional": {
+        "ingredientes": "Farinha de amêndoas, açúcar, claras de ovo, chocolate branco, framboesa fresca, corante natural de beterraba.",
+        "alergicos": "CONTÉM AMÊNDOAS, OVOS E LEITE. PODE CONTER OUTRAS CASTANHAS. NÃO CONTÉM GLÚTEN.",
+        "gluten": "sem glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300401",
+      "handle": "cookie-chocolate-chunks",
+      "title": "Cookie Chocolate Chunks",
+      "description": "Cookie de bordas crocantes e centro macio, carregado de pedaços grandes de chocolate 54%. Assado no dia.",
+      "categoria": "Cookies & Brownies",
+      "categoria_handle": "cookies-brownies",
+      "weight": 110,
+      "validade_dias": 15,
+      "preco_de": 16.9,
+      "preco_por": 13.9,
+      "custo": 5.2,
+      "ean13": "7890000304018",
+      "image": "/saboria/products/300401.jpg",
+      "nutricional": {
+        "ingredientes": "Farinha de trigo, manteiga, chocolate 54% em pedaços, açúcar mascavo, ovos, essência de baunilha, fermento químico.",
+        "alergicos": "CONTÉM GLÚTEN, LEITE, OVOS E DERIVADOS DE SOJA. PODE CONTER CASTANHAS E AMENDOIM.",
+        "gluten": "contém glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300402",
+      "handle": "brownie-70-cacau",
+      "title": "Brownie 70% Cacau",
+      "description": "Denso, úmido e intenso, com casquinha craquelada e nozes opcionais. Feito com chocolate 70% de origem única.",
+      "categoria": "Cookies & Brownies",
+      "categoria_handle": "cookies-brownies",
+      "weight": 120,
+      "validade_dias": 10,
+      "preco_de": 18.9,
+      "preco_por": 15.9,
+      "custo": 6.1,
+      "ean13": "7890000304025",
+      "image": "/saboria/products/300402.jpg",
+      "nutricional": {
+        "ingredientes": "Chocolate 70% cacau, manteiga, açúcar, ovos, farinha de trigo, cacau em pó.",
+        "alergicos": "CONTÉM GLÚTEN, LEITE, OVOS E DERIVADOS DE SOJA. PODE CONTER NOZES E OUTRAS CASTANHAS.",
+        "gluten": "contém glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300403",
+      "handle": "cookie-red-velvet",
+      "title": "Cookie Red Velvet",
+      "description": "Massa aveludada de cacau vermelho com chunks de chocolate branco. O contraste que virou febre na vitrine.",
+      "categoria": "Cookies & Brownies",
+      "categoria_handle": "cookies-brownies",
+      "weight": 110,
+      "validade_dias": 15,
+      "preco_de": 16.9,
+      "preco_por": 14.9,
+      "custo": 5.6,
+      "ean13": "7890000304032",
+      "image": "/saboria/products/300403.jpg",
+      "nutricional": {},
+      "nutricional_pendente": true
+    },
+    {
+      "sku": "300501",
+      "handle": "cheesecake-frutas-vermelhas",
+      "title": "Cheesecake de Frutas Vermelhas",
+      "description": "Cream cheese assado lentamente sobre base de biscoito amanteigado, coberto com calda de frutas vermelhas frescas.",
+      "categoria": "Cheesecakes",
+      "categoria_handle": "cheesecakes",
+      "weight": 850,
+      "validade_dias": 5,
+      "preco_de": 79.9,
+      "preco_por": 69.9,
+      "custo": 27.4,
+      "ean13": "7890000305015",
+      "image": "/saboria/products/300501.jpg",
+      "nutricional": {
+        "ingredientes": "Cream cheese, ovos, açúcar, creme de leite fresco, biscoito, manteiga, morango, amora, framboesa.",
+        "alergicos": "CONTÉM GLÚTEN, LEITE E OVOS. PODE CONTER CASTANHAS.",
+        "gluten": "contém glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300502",
+      "handle": "cheesecake-maracuja",
+      "title": "Cheesecake de Maracujá",
+      "description": "Cremoso, com cobertura de maracujá fresco e sementes crocantes. Azedinho na medida para equilibrar a doçura.",
+      "categoria": "Cheesecakes",
+      "categoria_handle": "cheesecakes",
+      "weight": 850,
+      "validade_dias": 5,
+      "preco_de": 79.9,
+      "preco_por": 69.9,
+      "custo": 27.4,
+      "ean13": "7890000305022",
+      "image": "/saboria/products/300502.jpg",
+      "nutricional": {
+        "ingredientes": "Cream cheese, ovos, açúcar, creme de leite fresco, biscoito, manteiga, polpa e sementes de maracujá.",
+        "alergicos": "CONTÉM GLÚTEN, LEITE E OVOS. PODE CONTER CASTANHAS.",
+        "gluten": "contém glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300601",
+      "handle": "kit-cafe-da-tarde",
+      "title": "Kit Café da Tarde",
+      "description": "Dois cookies, dois brownies, quatro brigadeiros belgas e quatro macarons sortidos numa caixa presenteável. Serve bem duas pessoas (ou uma muito feliz).",
+      "categoria": "Kits & Presentes",
+      "categoria_handle": "kits-presentes",
+      "weight": 640,
+      "validade_dias": 7,
+      "preco_de": 129.9,
+      "preco_por": 114.9,
+      "custo": 44.9,
+      "ean13": "7890000306012",
+      "image": "/saboria/products/300601.jpg",
+      "nutricional": {
+        "ingredientes": "Ver rótulos individuais dos itens do kit.",
+        "alergicos": "CONTÉM GLÚTEN, LEITE, OVOS, AMÊNDOAS E DERIVADOS DE SOJA. PODE CONTER OUTRAS CASTANHAS E AMENDOIM.",
+        "gluten": "contém glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    },
+    {
+      "sku": "300602",
+      "handle": "caixa-doces-finos-16",
+      "title": "Caixa de Doces Finos — 16 un",
+      "description": "Brigadeiros belgas, beijinhos de coco queimado, camafeus de nozes e trufas de maracujá. A caixa dos casamentos e das ocasiões que pedem capricho.",
+      "categoria": "Kits & Presentes",
+      "categoria_handle": "kits-presentes",
+      "weight": 480,
+      "validade_dias": 7,
+      "preco_de": 89.9,
+      "preco_por": 79.9,
+      "custo": 31.2,
+      "ean13": "7890000306029",
+      "image": "/saboria/products/300602.jpg",
+      "nutricional": {
+        "ingredientes": "Leite condensado, chocolate belga, creme de leite, manteiga, coco, nozes, maracujá, açúcar.",
+        "alergicos": "CONTÉM LEITE, NOZES E DERIVADOS DE SOJA. PODE CONTER OUTRAS CASTANHAS, AMENDOIM E GLÚTEN.",
+        "gluten": "pode conter glúten",
+        "lactose": "contém lactose"
+      },
+      "nutricional_pendente": false
+    }
+  ]
+}
