@@ -5,6 +5,12 @@ loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 const REDIS_URL = process.env.REDIS_URL
 
 module.exports = defineConfig({
+  // DISABLE_MEDUSA_ADMIN=true desliga o dashboard embarcado (útil em hosts com
+  // pouca memória, como o free tier do Render). O admin pode rodar localmente
+  // apontando para o mesmo DATABASE_URL.
+  admin: {
+    disable: process.env.DISABLE_MEDUSA_ADMIN === 'true',
+  },
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
     // Postgres gerenciado (Supabase/Neon/RDS) exige SSL — ative com DATABASE_SSL=true.
