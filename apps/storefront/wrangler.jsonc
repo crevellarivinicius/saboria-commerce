@@ -12,6 +12,8 @@
     "binding": "IMAGES"
   },
   "kv_namespaces": [
-    { "binding": "NEXT_INC_CACHE_KV", "id": "c6866cc50bcc4c32964b20d363b666f5" }
+    // Crie o namespace na sua conta e cole o id aqui:
+    //   npx wrangler kv namespace create NEXT_INC_CACHE_KV
+    { "binding": "NEXT_INC_CACHE_KV", "id": "<KV_NAMESPACE_ID>" }
   ]
 }

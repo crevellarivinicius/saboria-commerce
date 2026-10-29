@@ -15,6 +15,17 @@ Full-stack headless e-commerce for **Saboria**, a fictional artisan pâtisserie:
 |---|---|---|
 | ![Store](docs/shot-store.png) | ![PDP](docs/shot-pdp.png) | ![Mobile](docs/shot-mobile.png) |
 
+## Lighthouse
+
+Measured on the production build (`next build` + `next start`), homepage `/br`:
+
+| | Performance | Accessibility | Best Practices | SEO |
+|---|---|---|---|---|
+| Desktop | **100** | 94 | **100** | 91 |
+| Mobile | **90** | 94 | **100** | 91 |
+
+Core Web Vitals (mobile): FCP 1.0 s · LCP 3.5 s · TBT 80 ms · **CLS 0**.
+
 ## Stack
 
 | Layer | Tech |
