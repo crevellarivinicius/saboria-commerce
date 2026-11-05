@@ -77,13 +77,20 @@ export default async function setup({ container }: ExecArgs) {
     logger.info("Região Brasil criada.")
   }
 
-  // 4) tax region br
+  // 4) tax region br — sem provider_id o cálculo de impostos do carrinho
+  // falha ao adicionar itens ("Unable to retrieve the tax provider with id: null")
   const taxRegions = await taxModule.listTaxRegions({ country_code: "br" })
   if (!taxRegions.length) {
     await createTaxRegionsWorkflow(container).run({
-      input: [{ country_code: "br" }],
+      input: [{ country_code: "br", provider_id: "tp_system" }],
     })
     logger.info("Tax region BR criada.")
+  } else if (!taxRegions[0].provider_id) {
+    await taxModule.updateTaxRegions({
+      id: taxRegions[0].id,
+      provider_id: "tp_system",
+    })
+    logger.info("Tax region BR corrigida (provider tp_system).")
   }
 
   // 5) estoque
