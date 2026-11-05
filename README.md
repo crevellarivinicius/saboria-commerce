@@ -9,7 +9,7 @@
 
 Full-stack headless e-commerce for **Saboria**, a fictional artisan pâtisserie: **Medusa 2** backend and a fully customized **Next.js (App Router)** storefront in a Turborepo monorepo — pt-BR storefront, BRL pricing with strike-through price lists, real product data model (nutritional info, allergens, shelf life) and a local environment that boots with two commands.
 
-**▶ Live demo: [saboria-commerce-storefront.vin-cius-crevellari-portf-lio.workers.dev](https://saboria-commerce-storefront.vin-cius-crevellari-portf-lio.workers.dev)**
+**▶ Live demo: [saboria-commerce-storefront.viniciuscrevellari-portfolio.workers.dev](https://saboria-commerce-storefront.viniciuscrevellari-portfolio.workers.dev)**
 
 The demo runs the full flow — catalog, cart and checkout up to order review — with the system (manual) payment provider; no real payment is processed. The backend is on Render's free tier: a GitHub Actions job pings it every 10 minutes, but the first request after a long idle period can take up to a minute.
 
