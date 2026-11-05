@@ -33,3 +33,12 @@ cache does not apply.
 - During development, aggressive data caching can serve stale catalog after a
   reseed — clearing `.next` (or restarting dev) refreshes it. Documented here
   because it *will* surprise someone.
+
+## Addendum: `middleware.ts` kept on Next.js 16
+
+Next.js 16 renames `middleware.ts` to `proxy.ts`, and `proxy` always runs on
+the Node.js runtime. On Cloudflare, OpenNext marks Node.js middleware support
+as experimental and not officially maintained, while Edge middleware is the
+supported path. The storefront therefore keeps `middleware.ts` (Edge), which
+Next.js 16 still runs with a deprecation warning at build time. Revisit once
+OpenNext supports `proxy` on Cloudflare as stable.

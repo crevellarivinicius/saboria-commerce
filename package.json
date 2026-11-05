@@ -15,14 +15,10 @@
     "backend:dev": "turbo dev --filter=@crevellari/backend",
     "storefront:dev": "turbo dev --filter=@crevellari/storefront"
   },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "19.0.5",
-      "@types/react-dom": "19.0.5"
-    }
-  },
   "devDependencies": {
     "@medusajs/eslint-plugin": "2.16.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.4",
     "jiti": "^2.7.0",
     "prettier": "^3.2.5",
@@ -33,6 +29,8 @@
     "!apps/backend/.medusa/**"
   ],
   "overrides": {
-    "ajv": "^8.0.0"
+    "ajv": "^8.0.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0"
   }
 }
