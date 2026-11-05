@@ -2,12 +2,16 @@
 
 ![Node](https://img.shields.io/badge/Node-%E2%89%A520-339933)
 ![Medusa](https://img.shields.io/badge/Medusa-2.16-9f7aea)
-![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
 ![License](https://img.shields.io/badge/license-MIT-2ea44f)
 
 **English** · [Português (Brasil)](README.pt-BR.md)
 
 Full-stack headless e-commerce for **Saboria**, a fictional artisan pâtisserie: **Medusa 2** backend and a fully customized **Next.js (App Router)** storefront in a Turborepo monorepo — pt-BR storefront, BRL pricing with strike-through price lists, real product data model (nutritional info, allergens, shelf life) and a local environment that boots with two commands.
+
+**▶ Live demo: [saboria-commerce-storefront.vin-cius-crevellari-portf-lio.workers.dev](https://saboria-commerce-storefront.vin-cius-crevellari-portf-lio.workers.dev)**
+
+The demo runs the full flow — catalog, cart and checkout up to order review — with the system (manual) payment provider; no real payment is processed. The backend is on Render's free tier: a GitHub Actions job pings it every 10 minutes, but the first request after a long idle period can take up to a minute.
 
 ![Saboria homepage](docs/shot-home.png)
 
@@ -17,21 +21,21 @@ Full-stack headless e-commerce for **Saboria**, a fictional artisan pâtisserie:
 
 ## Lighthouse
 
-Measured on the production build (`next build` + `next start`), homepage `/br`:
+Measured against the live demo (Cloudflare Workers), homepage `/br`, lowest of two runs:
 
 | | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|---|
 | Desktop | **100** | 94 | **100** | 91 |
-| Mobile | **90** | 94 | **100** | 91 |
+| Mobile | **91** | 94 | **100** | 91 |
 
-Core Web Vitals (mobile): FCP 1.0 s · LCP 3.5 s · TBT 80 ms · **CLS 0**.
+Core Web Vitals (mobile): FCP 1.2 s · LCP 2.8 s · TBT 250 ms · **CLS 0**.
 
 ## Stack
 
 | Layer | Tech |
 |---|---|
 | Backend | [Medusa 2.16](https://medusajs.com) (Node 20+, Postgres, Redis-backed cache/event-bus/workflow-engine) |
-| Storefront | Next.js 15 App Router, Tailwind CSS, [OpenNext](https://opennext.js.org/cloudflare) for Cloudflare Workers |
+| Storefront | Next.js 16 App Router, React 19, Tailwind CSS, [OpenNext](https://opennext.js.org/cloudflare) for Cloudflare Workers |
 | Monorepo | Turborepo + npm workspaces |
 | Infra (local) | Docker Compose (Postgres 16, Redis 7) |
 
@@ -105,7 +109,7 @@ Decisions worth reading:
 
 ## Deploying
 
-The reference environment is local. [DEPLOY.md](DEPLOY.md) documents a production topology (Cloudflare Workers storefront, managed Postgres/Redis, S3-compatible media) without binding the project to any provider.
+The live demo runs on Cloudflare Workers (storefront, via OpenNext), Render (backend, from [`render.yaml`](render.yaml)), Supabase (Postgres) and Upstash (Redis), all on free tiers. The Medusa admin dashboard is disabled on the demo backend (`DISABLE_MEDUSA_ADMIN=true`) to keep the small instance lean; run it locally against the same database when needed. [DEPLOY.md](DEPLOY.md) documents the topology step by step.
 
 ## Credits
 
