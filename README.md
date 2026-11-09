@@ -11,7 +11,7 @@ Full-stack headless e-commerce for **Saboria**, a fictional artisan pâtisserie:
 
 **▶ Live demo: [saboria-commerce-storefront.viniciuscrevellari-portfolio.workers.dev](https://saboria-commerce-storefront.viniciuscrevellari-portfolio.workers.dev)**
 
-The demo runs the full flow — catalog, cart and checkout up to order review — with the system (manual) payment provider; no real payment is processed. The backend is on Render's free tier: a GitHub Actions job pings it every 10 minutes, but the first request after a long idle period can take up to a minute.
+The demo runs the full flow — catalog, cart and checkout up to order review — with the system (manual) payment provider; no real payment is processed. The backend runs on Fly.io and suspends itself when idle; the first request after a quiet period wakes it up in about a second.
 
 ![Saboria homepage](docs/shot-home.png)
 
@@ -109,7 +109,7 @@ Decisions worth reading:
 
 ## Deploying
 
-The live demo runs on Cloudflare Workers (storefront, via OpenNext), Render (backend, from [`render.yaml`](render.yaml)), Supabase (Postgres) and Upstash (Redis), all on free tiers. The Medusa admin dashboard is disabled on the demo backend (`DISABLE_MEDUSA_ADMIN=true`) to keep the small instance lean; run it locally against the same database when needed. [DEPLOY.md](DEPLOY.md) documents the topology step by step.
+The live demo runs on Cloudflare Workers (storefront, via OpenNext), Fly.io (backend, from [`apps/backend/fly.toml`](apps/backend/fly.toml)), Supabase (Postgres) and Upstash (Redis), with Cloudflare, Supabase and Upstash on free tiers and the Fly machine suspended while idle. The Medusa admin dashboard is disabled on the demo backend (`DISABLE_MEDUSA_ADMIN=true`) to keep the small instance lean; run it locally against the same database when needed. [DEPLOY.md](DEPLOY.md) documents the topology step by step.
 
 ## Credits
 

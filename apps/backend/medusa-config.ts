@@ -6,7 +6,7 @@ const REDIS_URL = process.env.REDIS_URL
 
 module.exports = defineConfig({
   // DISABLE_MEDUSA_ADMIN=true desliga o dashboard embarcado (útil em hosts com
-  // pouca memória, como o free tier do Render). O admin pode rodar localmente
+  // pouca memória, como a máquina de 512MB do demo). O admin pode rodar localmente
   // apontando para o mesmo DATABASE_URL.
   admin: {
     disable: process.env.DISABLE_MEDUSA_ADMIN === 'true',

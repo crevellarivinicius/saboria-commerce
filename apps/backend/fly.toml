@@ -1,0 +1,33 @@
+# Backend Medusa do demo no Fly.io.
+# Segredos (DATABASE_URL, REDIS_URL, CORS, JWT/COOKIE) entram via `fly secrets set`.
+app = "saboria-backend"
+primary_region = "iad" # mesma região do Supabase (us-east-1)
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "9000"
+  DISABLE_MEDUSA_ADMIN = "true"
+  DATABASE_SSL = "true"
+
+[http_service]
+  internal_port = 9000
+  force_https = true
+  # Suspende a máquina quando fica ociosa e retoma em menos de um segundo
+  # na próxima requisição: sem cold start longo e sem pagar por tempo parado.
+  auto_stop_machines = "suspend"
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [[http_service.checks]]
+    grace_period = "60s"
+    interval = "30s"
+    timeout = "5s"
+    method = "GET"
+    path = "/health"
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1

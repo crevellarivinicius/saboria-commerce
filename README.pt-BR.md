@@ -11,7 +11,7 @@ E-commerce headless full-stack da **Saboria**, uma confeitaria artesanal fictíc
 
 **▶ Demo ao vivo: [saboria-commerce-storefront.viniciuscrevellari-portfolio.workers.dev](https://saboria-commerce-storefront.viniciuscrevellari-portfolio.workers.dev)**
 
-O demo roda o fluxo completo — catálogo, carrinho e checkout até a revisão do pedido — com o provedor de pagamento de sistema (manual); nenhum pagamento real é processado. O backend está no free tier do Render: um job do GitHub Actions faz ping a cada 10 minutos, mas a primeira requisição depois de muito tempo parado pode levar até um minuto.
+O demo roda o fluxo completo — catálogo, carrinho e checkout até a revisão do pedido — com o provedor de pagamento de sistema (manual); nenhum pagamento real é processado. O backend roda no Fly.io e é suspenso quando fica ocioso; a primeira requisição depois de um tempo parado acorda a máquina em cerca de um segundo.
 
 ![Homepage da Saboria](docs/shot-home.png)
 
@@ -109,7 +109,7 @@ Decisões documentadas:
 
 ## Deploy
 
-O demo ao vivo roda em Cloudflare Workers (storefront, via OpenNext), Render (backend, a partir do [`render.yaml`](render.yaml)), Supabase (Postgres) e Upstash (Redis), tudo em free tier. O dashboard admin do Medusa fica desligado no backend do demo (`DISABLE_MEDUSA_ADMIN=true`) para deixar a instância pequena mais leve; quando precisar, rode o admin localmente apontando para o mesmo banco. O [DEPLOY.md](DEPLOY.md) documenta a topologia passo a passo.
+O demo ao vivo roda em Cloudflare Workers (storefront, via OpenNext), Fly.io (backend, a partir do [`apps/backend/fly.toml`](apps/backend/fly.toml)), Supabase (Postgres) e Upstash (Redis), com Cloudflare, Supabase e Upstash em free tier e a máquina do Fly suspensa quando ociosa. O dashboard admin do Medusa fica desligado no backend do demo (`DISABLE_MEDUSA_ADMIN=true`) para deixar a instância pequena mais leve; quando precisar, rode o admin localmente apontando para o mesmo banco. O [DEPLOY.md](DEPLOY.md) documenta a topologia passo a passo.
 
 ## Créditos
 

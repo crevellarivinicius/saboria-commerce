@@ -3,6 +3,18 @@
 Formato baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
 com [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [Não lançado]
+
+### Alterado
+
+- Backend do demo migrado do Render para o Fly.io (`Dockerfile` + `fly.toml` em `apps/backend`), com a máquina suspensa quando ociosa; o proxy do free tier do Render passou a devolver 429 para as requisições vindas do Cloudflare Workers;
+- Página de produto em duas colunas iguais, com a imagem limitada à altura da tela;
+- Imagem de compartilhamento (Open Graph/Twitter) trocada pela arte da Saboria.
+
+### Removido
+
+- `render.yaml` e o workflow de keep-alive, que não são mais necessários.
+
 ## [1.1.0] - 2026-11-05
 
 ### Adicionado
