@@ -14,7 +14,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
           return (
             <Container
               key={image.id}
-              className="relative aspect-[29/34] w-full overflow-hidden bg-ui-bg-subtle"
+              className="relative aspect-[4/5] w-full overflow-hidden bg-ui-bg-subtle small:aspect-auto small:h-[min(calc(100vh-12rem),640px)]"
               id={image.id}
             >
               {!!image.url && (
@@ -24,7 +24,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                   className="absolute inset-0 rounded-rounded"
                   alt={`Imagem do produto ${index + 1}`}
                   fill
-                  sizes="(max-width: 576px) 280px, (max-width: 768px) 360px, (max-width: 992px) 480px, 800px"
+                  sizes="(max-width: 576px) 280px, (max-width: 768px) 360px, (max-width: 992px) 480px, 720px"
                   style={{
                     objectFit: "cover",
                   }}

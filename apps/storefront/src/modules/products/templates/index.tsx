@@ -31,16 +31,16 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
   return (
     <>
       <div
-        className="content-container flex flex-col gap-8 py-12 small:flex-row small:items-start small:gap-12"
+        className="content-container flex flex-col gap-8 py-8 small:flex-row small:items-start small:gap-12"
         data-testid="product-container"
       >
         {/* coluna esquerda: imagem */}
-        <div className="w-full small:w-3/5">
+        <div className="w-full small:w-1/2">
           <ImageGallery images={images} />
         </div>
 
         {/* coluna direita: info + ações + detalhes */}
-        <div className="flex w-full flex-col gap-y-8 small:sticky small:top-32 small:w-2/5">
+        <div className="flex w-full flex-col gap-y-8 small:sticky small:top-32 small:w-1/2">
           <ProductInfo product={product} />
           <Suspense
             fallback={
